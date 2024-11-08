@@ -9,10 +9,6 @@ client_scripts {
     'client.lua',
 }
 
-server_scripts {
-    'server.lua'
-}
-
 exports {
     'Notify'
 }
@@ -21,8 +17,9 @@ ui_page 'assets/index.html'
 
 files {
     'assets/index.html',
+    'assets/styles.css',
     'assets/script.js',
-    'assets/fonts/Gilroy-Light.ttf',
+    'assets/fonts/Gilroy-Heavy.ttf',
     'assets/success-icon.svg',
     'assets/warn-icon.svg',
     'assets/error-icon.svg',
