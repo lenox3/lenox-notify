@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js" type = "text/javascript"></script>
+    <style>
+        * {
+            user-select: none !important;
+        }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./assets/fonts/Gilroy-Light.ttf') format('truetype');
+        }
+
+        .notification {
+            font-family: 'Gilroy', sans-serif;
+            animation: slideInFromRight 0.5s ease-out forwards;
+            opacity: 0;
+            position: relative;
+        }
+
+        @keyframes slideInFromRight {
+            0% { opacity: 0; transform: translateX(100px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .success {
+            background: linear-gradient(90deg, rgb(0, 255, 180, 0.2), rgba(0, 0, 0, 0.6));
+            color: #fff !important;
+        }
+
+        .warning {
+            background: linear-gradient(90deg, rgba(255, 204, 0, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 8px;
+            color: #fff !important;
+        }
+
+        .error {
+            background: linear-gradient(90deg, rgba(255, 0, 77, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 8px;
+            color: #fff !important;
+        }
+
+        .primary {
+            background: linear-gradient(90deg, rgba(0, 200, 255, 0.2), rgba(0, 0, 0, 0.6));
+            border-radius: 8px;
+            color: #fff !important;
+        }
+
+        .template {
+            display: none !important;
+        }
+
+        .notification {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+
+    <div class="fixed top-10 right-10 w-80 space-y-4 notify-container">
+        <div class="notification template success">
+            <img src="./success-icon.svg" alt="Success Icon" class="w-8 h-8 mr">
+            <span class="ml-4">Hud Loaded</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
