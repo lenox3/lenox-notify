@@ -30,7 +30,7 @@ QBCore.Functions.Notify('You have been revived!', 'success', 7500)
 
 ## Preview
 
-![Preview](https://media.discordapp.net/attachments/421702737739120643/1304494534662815794/image.png?ex=672f98b5&is=672e4735&hm=a7d311850f2ecd85441958e18ffc256e1eb775357ee3d765e4df2c1aa48e73bd&=&format=webp&quality=lossless&width=469&height=374)
+![Preview](https://media.discordapp.net/attachments/1275782611482181642/1304578899996311552/image.png?ex=672fe747&is=672e95c7&hm=420462f6bd74c0f8c7ed9fbff9694ce9835195adbdefa069583cec3dd11a2238&=&format=webp&quality=lossless&width=409&height=405)
 
 ## Features
 
