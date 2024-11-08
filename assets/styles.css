@@ -1,0 +1,84 @@
+* {
+    user-select: none !important;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy-Heavy.ttf') format('truetype');
+}
+
+.notification {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    animation: slideInFromRight 0.5s ease-out forwards;
+    opacity: 0;
+    position: relative;
+}
+
+@keyframes slideInFromRight {
+    0% { opacity: 0; transform: translateX(100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.success {
+    background: linear-gradient(90deg, rgba(26, 156, 117, 0.7), rgba(0, 0, 0, 0.8));
+    color: #fff !important;
+}
+
+.warning {
+    background: linear-gradient(90deg, rgba(153, 125, 15, 0.7), rgba(0, 0, 0, 0.8));
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.error {
+    background: linear-gradient(90deg, rgba(129, 23, 55, 0.7), rgba(0, 0, 0, 0.8));
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.primary {
+    background: linear-gradient(90deg, rgba(15, 121, 150, 0.7), rgba(0, 0, 0, 0.8));
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.template {
+    display: none !important;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.progress-bar {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 4px;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.3);
+transform-origin: left;
+transform: scaleX(1);
+transition: transform linear;
+}
+
+.notification.success .progress-bar {
+background-color: rgba(31, 182, 136, 0.8);
+}
+
+.notification.warning .progress-bar {
+background-color: rgba(184, 151, 20, 0.8);
+}
+
+.notification.error .progress-bar {
+background-color: rgba(160, 21, 63, 0.8);
+}
+
+.notification.primary .progress-bar {
+background-color: rgba(20, 157, 195, 0.8);
+}
