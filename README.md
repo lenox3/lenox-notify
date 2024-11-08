@@ -38,10 +38,6 @@ QBCore.Functions.Notify('You have been revived!', 'success', 7500)
 - Responsive design using Tailwind CSS
 - Customizable notifications with different lengths and types
 
-## Disadvantages
-
-- **Readability Issues**: Tthe text may sometimes be hard to read due to low opacity on the background color. You can freely change the colors to what you like in the index.html file since its 100% open sourced code.
-
 ## Requirements
 
 - [qb-core](https://github.com/qbcore-framework/qb-core)
